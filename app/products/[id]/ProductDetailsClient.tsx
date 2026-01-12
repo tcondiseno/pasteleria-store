@@ -213,8 +213,8 @@ export default function ProductDetailsClient({ product, variations }: bruh) {
     return true;
   };
 
-  const handleBuyNow = () => {
-    const res = handleAddToCart();
+  const handleBuyNow = async () => {
+    const res = await handleAddToCart();
     router.push("/cart");
   };
 
